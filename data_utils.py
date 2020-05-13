@@ -11,6 +11,12 @@ from skimage.transform import resize
 #then each example will be an array of size 196608
 
 def load_ifood(im_dir, label_dir, dim):
+    """load images and labels 
+    ---------
+    im_dir: location of the images
+    label_dir: location of the labels csv file 
+    dim: dimension of the resized labels 
+    """
     # TODO: joblib to parallelize
     # https://scikit-image.org/docs/dev/user_guide/tutorial_parallelization.html
     images = ImageCollection(im_dir)
@@ -38,18 +44,3 @@ def load_val(dim=(256, 256), path=user_path):
     return load_ifood(path + 'val_set/*.jpg',
                       path + 'val_labels.csv', dim)
 
-def load_test(dim=(256, 256), path=user_path):
-    return load_ifood(path + 'test_set/*.jpg',
-                      path + 'test_labels.csv', dim)
-
-def load_all(path=user_path,
-             dim=(256, 256)):
-    X_train, y_train, _ = load_train(dim=dim, path=path)
-    X_val, y_val, _ = load_val(dim=dim, path=path)
-    X_test, y_test, _ = load_test(dim=dim, path=path)
-    return X_train, y_train, X_val, y_val, X_test, y_test
-
-# if __name__ == "__main__":
-#     X_test, y_test, _ = load_test()
-#     print(X_test.shape)
-#     print(y_test.shape)
