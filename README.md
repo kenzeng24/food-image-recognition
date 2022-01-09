@@ -18,7 +18,7 @@ Automatic food classification can be used to develop applications that help peop
 
 ## Results
 
-
+While our model's accuracy could have been higher, we were satisfied and impressed with the speed it achieved those results and how simple libraries such as PyTorch made implementing it. Our Kaggle scores indicated that around 83\% of the time, the correct class class of a testing image would be in our model's top 3. This high top-3 accuracy assures us our methods were effective and could potentially produce an extremely accurate model
 
 |           | parameters | Validation Loss | Validation accuracy  | Kaggle Score |
 |-----------|------------|-----------------|----------------------|--------------|
@@ -28,6 +28,6 @@ Automatic food classification can be used to develop applications that help peop
 
 ## Acknowledgements 
 
-* [pytorch-lucid](https://github.com/elichen/Feature-visualization/blob/master/Feature visualization.ipynb) 
+* [pytorch-lucid](https://github.com/elichen/Feature-visualization) 
 * [residual-networks](https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff) 
 * [torch-implementations](https://pytorch.org/hub/pytorch_vision_resnet/) 
