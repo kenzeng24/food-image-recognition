@@ -1,12 +1,12 @@
-# food-image-recognition
-
-This repo contains code used to train the neural network classifier on the ifood-2019-fgvc6 dataset, The goal is to classify images into one of 251 food groups. The main challenges posed by the problem's creators are the fine-grained classes and noise in the data (mislabeled images, unrelated images, etc). 
-
 <p float="left">
   <img src="/lucid-visualizations/class-1.png" width="200" />
   <img src="/lucid-visualizations/class-2.png" width="200" /> 
   <img src="/lucid-visualizations/class-3.png" width="200" />
 </p>
+
+# food-image-recognition
+
+Automatic food classification can be used to develop applications that help people monitor their food intake and lead healthier lives. However, this task is challenging problem due to the shear variety of different food groups and the similarity between groups.This repo contains code used to train the neural network classifier on the ifood-2019-fgvc6 dataset, The goal is to classify images into one of 251 food groups. The main challenges posed by the problem's creators are the fine-grained classes and noise in the data (mislabeled images, unrelated images, etc).  
 
 ## Tools Used 
 
@@ -18,6 +18,8 @@ This repo contains code used to train the neural network classifier on the ifood
 
 ## Results
 
+
+
 |           | parameters | Validation Loss | Validation accuracy  | Kaggle Score |
 |-----------|------------|-----------------|----------------------|--------------|
 | VGG11     | 129800187  | 4.71            | 25.45                | 0.437        |
@@ -26,6 +28,6 @@ This repo contains code used to train the neural network classifier on the ifood
 
 ## Acknowledgements 
 
-* [pytorch-lucid](https://github.com/elichen/Feature- visualization/blob/master/Feature visualization.ipynb) 
-* [residual-networks](https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in- keras-385ec01ec8ff) 
+* [pytorch-lucid](https://github.com/elichen/Feature-visualization/blob/master/Feature visualization.ipynb) 
+* [residual-networks](https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff) 
 * [torch-implementations](https://pytorch.org/hub/pytorch_vision_resnet/) 
